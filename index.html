@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Nayelis</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+ 
+<title>preview blog</title>
+ 
+<style>figure{margin:0}.tmblr-iframe{position:absolute}.tmblr-iframe.hide{display:none}.tmblr-iframe--amp-cta-button{visibility:hidden;position:fixed;bottom:10px;left:50%;transform:translateX(-50%);z-index:100}.tmblr-iframe--amp-cta-button.tmblr-iframe--loaded{visibility:visible;animation:iframe-app-cta-transition .2s ease-out}</style><link rel="shortcut icon" href="https://64.media.tumblr.com/avatar_72ac7f59cce3_128.pnj">
+
+<!------ JQUERY ------>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<!------ GOOGLE FONTS ------>
+<link href="https://fonts.googleapis.com/css?family=Quicksand:600|Reggae+One|Public+Sans:500|Nunito:700|Karla|Montserrat:500" rel="stylesheet">
+
+<!------ PRELOAD CUSTOM FONTS ------>
+<link rel="preload" href="//glen-assets.github.io/fonts/LT Emphasis.ttf" as="font" type="font/ttf" crossorigin>
+
+<link rel="preload" href="//glen-assets.github.io/fonts/KaoriGel.ttf" as="font" type="font/ttf" crossorigin>
+
+<!------ ICON FONTS ------>
+<link rel="stylesheet" href="https://glen-assets.github.io/flaticon-uicons/uicons-regular-rounded.css">
+
+<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+<!------ PAGE SCRIPTS ------>
+<script src="//static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<link href="//glenthemes.s3.eu-west-2.amazonaws.com/chara-pages/01/uzlnn.css" rel="stylesheet">
+
+<script src="//glenthemes.s3.eu-west-2.amazonaws.com/chara-pages/01/ysypl.js"></script>
+ 
+<!--------------------------------------------------------->
+ 
+<style type="text/css">
+
+/*----- CUSTOM FONTS -----*/
+@font-face { font-family: "LT emphasis"; src: url('//glen-assets.github.io/fonts/LT Emphasis.ttf'); }
+
+@font-face { font-family: "kaori gel"; src: url('//glen-assets.github.io/fonts/KaoriGel.ttf'); }
+ 
+/*----- TOOLTIPS -----*/
+#s-m-t-tooltip {
+    padding:5px 10px;
+    margin:20px;
+    background-color:var(--Tooltips-BG);
+    border-radius:2px;
+    font-family:public sans;
+    font-size:8px;
+    letter-spacing:0.5px;
+    text-transform:uppercase;
+    color:var(--Tooltips-Text);
+    line-height:1.7em;
+    z-index:99;
+    max-width:40vw;
+}
+ 
+/*----- TUMBLR CONTROLS -----*/
+iframe#tumblr_controls, .iframe-controls--desktop {
+    top:5px!important;
+    right:5px!important;
+    position:fixed!important;
+    
+    transform:scale(0.7,0.7);
+    
+    transform-origin:100% 0;
+    z-index:999999!important
+    user-select:none;
+    opacity:0;
+}
+
+.tc-inv {
+    filter:invert(100%) hue-rotate(180deg)!important;
+    -webkit-filter:invert(100%) hue-rotate(180deg)!important;
+}
+
+.abeer {
+    opacity:1!important;
+}
+
+.tmblr-iframe--follow-teaser, .follow-teaser, .iframe-controls--phone-mobile, .tmblr-iframe--app-cta-button {
+    display:none!important;
+}
+ 
+/*----- BASICS -----*/
+body {
+    background-image:url(https://i.ibb.co/tMRGPZV/ASQS-waifu2x-art-noise3-tta-1.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-family:karla;
+    font-size:var(--Main-Font-Size);
+    color:var(--Main-Text-Color);
+    line-height:var(--Main-Text-Line-Height);
+    text-align:left;
+}
+
+.popup-box a:not([class]){
+    color:var(--Links-Color);
+    padding-bottom:.5px;
+    border-bottom:1px solid var(--Links-Underline);
+    text-decoration:none;
+}
+
+a {
+    text-decoration:none;
+}
+
+b, strong {
+    color:var(--Bold);
+}
+
+i:not([class]), em {
+    color:var(--Italic);
+}
+
+.note-to-user {
+    /* change VISIBLE to HIDDEN to dismiss the "get started" message */
+    visibility:visible;
+}
+
+/*----- TEXT HIGHLIGHT -----*/
+::selection {
+    color:var(--Text-On-Highlight);
+    background:var(--Text-BG-On-Highlight);
+}
+ 
+::-moz-selection {
+    color:var(--Text-On-Highlight);
+    background:var(--Text-BG-On-Highlight);
+}
+
+/*----- SCROLLBAR -----*/
+::-webkit-scrollbar {
+    width:var(--Scrollbar-Width);
+    height:0;
+    background-color:var(--Popup-Background);
+}
+ 
+::-webkit-scrollbar-thumb {
+    background-color:var(--Scrollbar-Color);
+    border-radius:var(--Scrollbar-Width);
+}
+ 
+::-webkit-scrollbar-track {
+    background-color:var(--Popup-Background);
+    border-radius:var(--Scrollbar-Width);
+}
+
+::-webkit-scrollbar-corner {
+    background:var(--Popup-Background);
+}
+
+/*----- MAIN SETTINGS -----*/
+body {
+    background-color:#eeecec;
+}
+
+:root {
+    /*----- GENERAL -----*/
+    --Main-Font-Size:12px;
+    --Main-Text-Color:#999;
+    --Main-Text-Line-Height:1.6em;
+    
+    --Links-Color:#;
+    --Links-Underline:#fbdbdb;
+    
+    --Bold:#999;
+    --Italic:#999;
+    
+    /*----- TOP FLOATING TITLE -----*/
+    --Large-Floating-Title-Bottom-Gap:32px;
+    --Large-Floating-Title-Size:18px;
+    --Large-Floating-Title-Color:#D6D6D6;
+    --Large-Floating-Title-Line-Height:175%;
+    
+    /*----- CHARACTER LIST -----*/
+    --Character-Image-Blur-Amount:2px;
+    --Character-Image-Hover-Speed:300ms;
+    --Character-Image-Spacing:60px;
+    
+    /*----- POPUP SETTINGS -----*/
+    --Popup-Fade-Speed:400ms;
+    --Popup-Fade-Speed-RAW:400;
+    
+    --Overlay-Color:#ffffff;
+    --Overlay-Transparency:45%;
+    
+    --Popup-Width:510px;
+    --Popup-Image-Height:420px;
+    
+    --Popup-Background:#fff;
+    --Popup-Padding:20px;
+    
+    /*----- MAIN POPUP TITLE (TOP LEFT) -----*/
+    --Popup-Title-Size:13px;
+    --Popup-Title-Color:#C696A7;
+    --Popup-Title-Padding:10px;
+    --Popup-Title-Underline:#d6d6d6;
+    
+    /*----- POPUP CLOSE BUTTON -----*/
+    --Popup-Close-Width:30px;
+    --Popup-Close-Height:18px;
+    --Popup-Close-Icon-Size:6px;
+    --Popup-Close-Icon-Color:#ffffff;
+    --Popup-Close-Background:#E1ADBC;
+    
+    /*----- POPUP IMAGE (LONG, LEFT) -----*/
+    --Popup-Image-Width:215px;
+    --Popup-Image-Right-Gap:15px;
+    
+    /*----- POPUP SUBHEADINGS (e.g. basic info, about) -----*/
+    --Popup-Subheading-Top-Gap:20px;
+    --Popup-Subheading-Size:12px;
+    --Popup-Subheading-Color:#999;
+    --Popup-Subheading-Accent:#E4A8C2;
+    --Popup-Subheading-Bottom-Gap:14px;
+    
+    /*----- POPUP ICON ROW STATS (e.g. name, age, birthday) -----*/
+    --Popup-Stats-Icon-Size:13px;
+    --Popup-Stats-Icon-Color:#fff;
+    --Popup-Stats-Icon-Padding:6px;
+    --Popup-Stats-Icon-Background:#EDC6D5;
+    
+    --Popup-Stats-Label-Font-Size:10px;
+    --Popup-Stats-Label-Font-Color:#666666;
+    
+    --Popup-Stats-Text-Size:12px;
+    --Popup-Stats-Text-Color:#999;
+    
+    --Popup-Stats-Row-Spacing:6px;
+    
+    /*----- POPUP METER BAR STATS -----*/
+    --Meter-Bar-Label-Size:10px;
+    --Meter-Bar-Label-Color:#DB9CB2;
+    --Meter-Bar-Label-Gap:16px;
+    
+    --Meter-Bar-Height:8px;
+    --Meter-Bar-Fill:#539C7E;
+    --Meter-Bar-Empty:#f4f4f4;
+    --Meter-Bar-Roundness:5px;
+    --Meter-Bar-Row-Spacing:5px;
+    
+    /*----- POPUP PARAGRAPH TEXT -----*/
+    --Paragraph-Text-Align:justify;
+    
+
+    
+    --Navlinks-HOVER-Background:#ffffff;
+    --Navlinks-HOVER-Icon-Color:#E5A8BD;
+    --Navlinks-Hover-Speed:420ms;
+    
+    /*----- BOTTOM TITLE -----*/
+    --Bottom-Floor-Title-Size:19px;
+    --Bottom-Floor-Title-Color:#ffffff;
+    --Bottom-Floor-Title-Padding:25px;
+    
+    /*----- OTHER -----*/
+    --Scrollbar-Width:0px;
+    --Scrollbar-Color:#f0f0f0;
+    --Scrollbar-Gap:0px;
+    
+    --Tooltips-BG:#ffffff;
+    --Tooltips-Text:#539C7E;
+    
+    --Text-On-Highlight:#777;
+    --Text-BG-On-Highlight:#f6f6f6;
+   
+}
+
+/*----- LARGE TOP TITLE -----*/
+.large-floating-title {
+    position:absolute;
+    top:0;
+    width:80vw;
+    display:inline-block;
+    font-family:"LT emphasis";
+    font-size:var(--Large-Floating-Title-Size);
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:var(--Large-Floating-Title-Color);
+    line-height:var(--Large-Floating-Title-Line-Height);
+    text-align:left;
+    opacity:0;
+    transition:opacity 0.4s ease-in-out;
+}
+
+.large-floating-title div {
+    white-space:pre-line;
+}
+
+/*----- NAVLINKS / CUSTOM LINKS -----*/
+.navlinks {
+    display:inline-block;
+    margin-left:var(--Navlinks-Edge-Offset);
+    margin-bottom:var(--Navlinks-Edge-Offset);
+    line-height:0;
+}
+
+.navlinks a {
+    width:calc(var(--Navlinks-Icon-Size) + (var(--Navlinks-Padding) * 2));
+    height:calc(var(--Navlinks-Icon-Size) + (var(--Navlinks-Padding) * 2));
+    background:var(--Navlinks-Background);
+    border-radius:100%;
+    line-height:0;
+    transition:background var(--Navlinks-Hover-Speed) ease-in-out;
+}
+
+.navlinks a:hover {
+    background:var(--Navlinks-HOVER-Background);
+}
+
+.navlinks a:hover .fi {
+    color:var(--Navlinks-HOVER-Icon-Color);
+}
+
+.navlinks a + a {
+    margin-top:var(--Navlinks-Spacing);
+}
+
+.navlinks .fi {
+    font-size:var(--Navlinks-Icon-Size);
+    color:var(--Navlinks-Icon-Color);
+    transition:color var(--Navlinks-Hover-Speed) ease-in-out;
+}
+
+.navlinks .fi-rr-apps {
+    margin-top:1px;
+}
+
+/*----- BOTTOM TITLE -----*/
+.bottom-floor-title {
+    width:100%;
+    padding:var(--Bottom-Floor-Title-Padding);
+    background:var(--Bottom-Floor-Title-Background);
+    box-sizing:border-box;
+    font-family:"reggae one";
+    font-size:var(--Bottom-Floor-Title-Size);
+    text-transform:uppercase;
+    letter-spacing:.5px;
+    color:var(--Bottom-Floor-Title-Color);
+    text-align:center;
+    line-height:1em;
+    white-space:nowrap;
+}
+
+/*----- CHARACTER LIST -----*/
+.character-list {
+    position:fixed;
+    bottom:0;left:3;right:4;
+    margin:10 ;
+    margin-bottom:calc(var(--Bottom-Floor-Title-Size) + (var(--Bottom-Floor-Title-Padding) * 2));
+    align-items:flex-end;
+    flex-wrap:nowrap;
+    width:calc(70% - (var(--Navlinks-Edge-Offset) * 2) - (var(--Navlinks-Icon-Size) * 2) - (var(--Navlinks-Padding) * 4));
+    z-index:9;
+}
+
+[menu-character]{
+    margin:0 calc(var(--Character-Image-Spacing) / 2);
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+    transition:all var(--Character-Image-Hover-Speed) ease-in-out,margin 0s;
+}
+
+.character-list:hover [menu-character]{
+    opacity:0.8;
+    -webkit-filter:blur(var(--Character-Image-Blur-Amount));
+    -moz-filter:blur(var(--Character-Image-Blur-Amount));
+    -o-filter:blur(var(--Character-Image-Blur-Amount));
+    filter:blur(var(--Character-Image-Blur-Amount));
+}
+
+.character-list:hover [menu-character]:hover {
+    opacity:1;
+    -webkit-filter:blur(0px);
+    -moz-filter:blur(0px);
+    -o-filter:blur(0px);
+    filter:blur(0px);
+}
+
+/*----- POPUP BOXES -----*/
+.popup-box {
+    position:relative;
+    padding:var(--Popup-Padding);
+    background:var(--Popup-Background);
+    width:var(--Popup-Width);
+}
+
+/*----- CLOSE POPUP BUTTON -----*/
+.dis-close {
+    position:absolute;
+    top:0;right:0;
+    width:var(--Popup-Close-Width);
+    height:var(--Popup-Close-Height);
+    background:var(--Popup-Close-Background);
+    cursor:pointer;
+}
+
+.dis-close .fi {
+    font-size:var(--Popup-Close-Icon-Size);
+    color:var(--Popup-Close-Icon-Color);
+    line-height:1em;
+}
+
+[popup-title]{
+    display:block;
+    font-family:kaori gel;
+    font-size:var(--Popup-Title-Size);
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:var(--Popup-Title-Color);
+    padding-bottom:var(--Popup-Title-Padding);
+    border-bottom:1px solid var(--Popup-Title-Underline);
+    line-height:1em;
+}
+
+[popup-title] + .maain {
+    margin-top:calc(var(--Popup-Title-Padding) * 1.25);
+}
+
+[popup-img-cont]{
+    align-self:center;
+    width:var(--Popup-Image-Width);
+    height:var(--Popup-Image-Height);
+    overflow:hidden;
+}
+
+[sub-heading]{
+    display:block;
+    font-family:montserrat;
+    font-size:var(--Popup-Subheading-Size);
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:var(--Popup-Subheading-Color);
+    line-height:1.5em;
+    text-align:center;
+}
+
+[sub-heading]::first-letter {
+    color:var(--Popup-Subheading-Accent);
+}
+
+* + [sub-heading]{
+    margin-top:var(--Popup-Subheading-Top-Gap);
+}
+
+[sub-heading] + * {
+    margin-top:var(--Popup-Subheading-Bottom-Gap);
+}
+
+/*----- ICON ROW STATS -----*/
+[icon-row] + [icon-row]{
+    margin-top:var(--Popup-Stats-Row-Spacing);
+}
+
+[icon-row] .las + [label] {
+    margin-left:6px;
+}
+
+[icon-row] .las {
+    padding:var(--Popup-Stats-Icon-Padding);
+    background:var(--Popup-Stats-Icon-Background);
+    border-radius:2px;
+    font-size:var(--Popup-Stats-Icon-Size);
+    color:var(--Popup-Stats-Icon-Color);
+    line-height:1em;
+}
+
+[icon-row] [label]{
+    display:inline-block;
+    padding-left:1px;
+    font-family:quicksand;
+    font-size:var(--Popup-Stats-Label-Font-Size);
+    text-transform:uppercase;
+    letter-spacing:.5px;
+    color:var(--Popup-Stats-Label-Font-Color);
+}
+
+[icon-row] [label] + [text] {
+    margin-left:4px;
+}
+
+[icon-row] [text]{
+    font-family:karla;
+    font-size:var(--Popup-Stats-Text-Size);
+    color:var(--Popup-Stats-Text-Color);
+    line-height:1.69em;
+}
+
+/*----- METER BAR STATS -----*/
+.bar-label {
+    display:table-cell;
+    font-family:quicksand;
+    font-size:var(--Meter-Bar-Label-Size);
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:var(--Meter-Bar-Label-Color);
+    line-height:1.5em;
+}
+
+.bar-cont {
+    position:relative;
+    width:100%;
+    height:var(--Meter-Bar-Height);
+    background:var(--Meter-Bar-Empty);
+    border-radius:var(--Meter-Bar-Roundness);
+    overflow:hidden;
+}
+
+.bar-fill {
+    position:absolute;
+    top:0;left:0;
+    height:100%;
+    background:var(--Meter-Bar-Fill);
+    border-radius:0 var(--Meter-Bar-Roundness) var(--Meter-Bar-Roundness) 0;
+}
+
+/*----- PARAGRAPH TEXT -----*/
+[paragraph-text]{
+    text-align:var(--Paragraph-Text-Align);
+}
+
+</style>
+ 
+<script
+    defer
+    type="application/javascript"
+    id="bilmur"
+    data-provider="tumblr.com"
+    data-service="blognetwork"
+    nonce="bUBfF3Ag1FgvztWDx9kg0W1HWs"
+    src="https://s0.wp.com/wp-content/js/bilmur.min.js?m=202234"
+  ></script><script src="https://assets.tumblr.com/assets/scripts/tumblelog_post_message_queue.js?_v=a8fadfa499d8cb7c3f8eefdf0b1adfdd"></script><link rel="stylesheet" type="text/css" href="https://assets.tumblr.com/fonts/calluna/stylesheet.css?v=3"><!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. --><!-- Read more: http://ogp.me/ --><meta property="fb:app_id" content="48119224995" /><meta property="og:site_name" content="Tumblr" /><meta property="og:title" content="Tumblr" /><meta property="og:url" content="https://glenthpvs.tumblr.com/fortitude" /><meta property="og:type" content="article" /><meta property="og:determiner" content="a" /><meta property="al:ios:url" content="tumblr://x-callback-url/blog?blogName=glenthpvs&amp;postID=" /><meta property="al:ios:app_name" content="Tumblr" /><meta property="al:ios:app_store_id" content="305343404" /><meta property="al:android:url" content="tumblr://x-callback-url/blog?blogName=glenthpvs&amp;postID=" /><meta property="al:android:app_name" content="Tumblr" /><meta property="al:android:package" content="com.tumblr" /><!-- END TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:site" content="tumblr" /><meta name="twitter:card" content="summary" /><meta name="twitter:description" content="glenthpvs" /><meta name="twitter:title" content="glenthpvs" /><meta name="twitter:app:name:iphone" content="Tumblr" /><meta name="twitter:app:name:ipad" content="Tumblr" /><meta name="twitter:app:name:googleplay" content="Tumblr" /><meta name="twitter:app:id:iphone" content="305343404" /><meta name="twitter:app:id:ipad" content="305343404" /><meta name="twitter:app:id:googleplay" content="com.tumblr" /><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=glenthpvs&amp;referrer=twitter-cards" /><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=glenthpvs&amp;referrer=twitter-cards" /><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=glenthpvs&amp;referrer=twitter-cards" /><link rel="canonical"  /></head>
+ 
+<body>
+
+<!--==============================
+         ╔══ ❀•°❀°•❀ ══╗
+         
+      LARGE TITLE AT THE TOP
+      
+         ╚══ ❀•°❀°•❀ ══╝
+================================-->
+
+<div large-floating-title>
+    
+</div>
+
+
+<!--==============================
+         ╔══ ❀•°❀°•❀ ══╗
+         
+          CHARACTER LIST
+      
+         ╚══ ❀•°❀°•❀ ══╝
+================================-->
+
+<div class="character-list">
+    
+    <div menu-character chara-id="kanan" width="120px">
+        <img image-url="https://i.idol.st/u/idol/symbol/8Matsuura-Kanan-FP1Xb4.png">
+        <span hover-text>kanan matsuura</span>
+    </div>
+    
+    <!--===========================================-->
+    <!--===========================================-->
+    <!--===========================================-->
+
+    <div menu-character chara-id="nico" width="110px">
+        <img image-url="https://i.ibb.co/TW518sJ/Nico-Logo.webp">
+        <span hover-text>nico yazawa</span>
+    </div>
+    
+    <!--===========================================-->
+    <!--===========================================-->
+    <!--===========================================-->
+    
+    <div menu-character chara-id="kasumi" width="135px">
+        <img image-url="https://i.idol.st/u/idol/symbol/67Nakasu-Kasumi-PT4rH1.png">
+        <span hover-text>kasumi nakasu</span>
+    </div>
+    
+    <!--===========================================-->
+    <!--===========================================-->
+    <!--===========================================-->
+    
+    <div menu-character chara-id="shioriko" width="130px">
+        <img image-url="https://i.idol.st/u/idol/symbol/113Mifune-Shioriko-T6TqtN.png" move-down="4px" move-left="6px">
+        <span hover-text>shioriko mifune</span>
+    </div>
+    
+    <!--===========================================-->
+    <!--===========================================-->
+    <!--===========================================-->
+    
+    <div menu-character chara-id="riko" width="123px">
+        <img image-url="https://i.idol.st/u/idol/symbol/12Sakurauchi-Riko-pjS2GS.png" move-left="6px">
+        <span hover-text>riko sakurauchi</span>
+    </div>
+    
+    <!--===========================================-->
+    <!--===========================================-->
+    <!--===========================================-->
+    
+    <div menu-character chara-id="you" width="120px">
+        <img image-url="https://i.idol.st/u/idol/symbol/17Watanabe-You-3xEtOM.png" move-right="6px">
+        <span hover-text>you watanabe</span>
+    </div>
+    
+</div><!--don't remove this </div> line-->
+
+
+
+<!--==============================
+         ╔══ ❀•°❀°•❀ ══╗
+         
+       CHARACTER POPUP BOXES
+      
+         ╚══ ❀•°❀°•❀ ══╝
+================================-->
+
+<div character-box chara-id="kanan">
+    <div popup-title>Kanan Matsuura</div>
+    
+    <img image-url="https://i.ibb.co/tMBKhq9/bla7.png" width="100%">
+    
+    <div sub-heading>basic info</div>
+    
+    <div icon-row>
+        <i class="las la-pen-alt"></i>
+        <span label>Name:</span>
+        <span text>松浦果南</span>
+    </div>
+    
+    <div icon-row>
+        <i class="las la-user"></i>
+        <span label>Age:</span>
+        <span text>17</span>
+    </div>
+    
+    <div icon-row>
+        <i class="las la-birthday-cake"></i>
+        <span label>Birthday:</span>
+        <span text>February 10th</span>
+    </div>
+    
+    <div sub-heading>statistics</div>
+    
+    <div meter-bars>
+        <div bar-name="singing" fill="90%"></div>
+        <div bar-name="dancing" fill="100%"></div>
+        <div bar-name="technique" fill="70%"></div>
+        <div bar-name="intelligence" fill="80%"></div>
+        <div bar-name="copperativeness" fill="100%"></div>
+    </div>
+    
+    <div sub-heading>♡ ♡ ♡</div>
+    
+    <div paragraph-text>
+        Kanan is a very kind, warm-hearted and altruistic individual. She deeply cares for her friends, being very supportive and often putting their needs above her own, going to great lengths to ensure they get what she thinks is best for them. However, due to this, Kanan can fail to realize the others' feelings the same way she does, and she will go to the same lengths to hide the truth if it will hurt the person.
+    </div><!--end paragraph-text-->
+</div><!--don't remove this </div> line-->
+
+<!--===========================================-->
+<!--===========================================-->
+<!--===========================================-->
+
+<div character-box chara-id="nico">
+    <div popup-title>Nico Yazawa</div>
+    
+    <img image-url="https://i.ibb.co/cc2J6y9/bla9.png" width="110%" move-down="10px">
+    
+    <div sub-heading>basic info</div>
+    
+    <div icon-row>
+        <i class="las la-pen-alt"></i>
+        <span label>Name:</span>
+        <span text>矢澤にこ</span>
+    </div>
+    
+    <div icon-row>
+        <i class="las la-user"></i>
+        <span label>Age:</span>
+        <span text>17</span>
+    </div>
+    
+    <div icon-row>
+        <i class="las la-birthday-cake"></i>
+        <span label>Birthday:</span>
+        <span text>July 22nd</span>
+    </div>
+    
+    <div sub-heading>statistics</div>
+    
+    <div meter-bars>
+        <div bar-name="singing" fill="70%"></div>
+        <div bar-name="dancing" fill="83%"></div>
+        <div bar-name="technique" fill="91%"></div>
+        <div bar-name="intelligence" fill="75%"></div>
+        <div bar-name="copperativeness" fill="87%"></div>
+    </div>
+    
+    <div sub-heading>✿ ✿ ✿</div>
+    
+    <div paragraph-text>
+        Nico has quite an abrasive personality, but when she takes on her alternate personality, she becomes a happy, upbeat character who is always smiling, often saying her catchphrase, "Nico Nico Nii!", accompanied with a pose. She usually thinks a bit highly of herself but, despite that, she is also caring.
+    </div><!--end paragraph-text-->
+</div><!--don't remove this </div> line-->
+
+<!--===========================================-->
+<!--===========================================-->
+<!--===========================================-->
+
+<div character-box chara-id="kasumi">
+    <div popup-title>Kasumi Nakasu</div>
+    
+    <img image-url="https://i.ibb.co/D8BMq6F/bla2.png" width="105%" move-left="5px" move-down="5px">
+    
+    <div sub-heading>basic info</div>
+    
+    <div icon-row>
+        <i class="las la-pen-alt"></i>
+        <span label>Name:</span>
+        <span text>中須かすみ</span>
+    </div>
+    
+    <div icon-row>
+        <i class="las la-user"></i>
+        <span label>Age:</span>
+        <span text>15</span>
+    </div>
+    
+    <div icon-row>
+        <i class="las la-birthday-cake"></i>
+        <span label>Birthday:</span>
+        <span text>January 23rd</span>
+    </div>
+    
+    <div sub-heading>statistics</div>
+    
+    <div meter-bars>
+        <div bar-name="singing" fill="80%"></div>
+        <div bar-name="speed" fill="89%"></div>
+        <div bar-name="technique" fill="75%"></div>
+        <div bar-name="intelligence" fill="90%"></div>
+        <div bar-name="copperativeness" fill="95%"></div>
+    </div>
+    
+    <div sub-heading>✧ ✧ ✧</div>
+    
+    <div paragraph-text>
+        Kasumi is a kind, friendly and lively girl who loves all things cute, and her love for idols is unrivaled in strength and inspiration. Kasumi wants to be number one in any competition she's in, and often resorts to cheating or even sabotage to achieve that goal.
+    </div><!--end paragraph-text-->
+</div><!--don't remove this </div> line-->
+
+<!--===========================================-->
+<!--===========================================-->
+<!--===========================================-->
+
+<div character-box chara-id="shioriko">
+    <div popup-title>Shioriko Mifune</div>
+    
+    <img image-url="https://i.ibb.co/BtJnRQb/bla2.png" width="100%" move-down="5px">
+    
+    <div sub-heading>basic info</div>
+    
+    <div icon-row>
+        <i class="las la-pen-alt"></i>
+        <span label>Name:</span>
+        <span text>三船栞子</span>
+    </div>
+    
+    <div icon-row>
+        <i class="las la-user"></i>
+        <span label>Age:</span>
+        <span text>15</span>
+    </div>
+    
+    <div icon-row>
+        <i class="las la-birthday-cake"></i>
+        <span label>Birthday:</span>
+        <span text>October 5th</span>
+    </div>
+    
+    <div sub-heading>statistics</div>
+    
+    <div meter-bars>
+        <div bar-name="singing" fill="91%"></div>
+        <div bar-name="dancing" fill="80%"></div>
+        <div bar-name="technique" fill="78%"></div>
+        <div bar-name="intelligence" fill="90%"></div>
+        <div bar-name="copperativeness" fill="85%"></div>
+    </div>
+    
+    <div sub-heading>♪ ♪ ♪</div>
+    
+    <div paragraph-text>
+        Shioriko is  calm and academically gifted. She values Japanese tradition and has been trained in traditional dance and flower arranging. She has a talent for identifying people's strengths and weaknesses, and uses this to help students at Nijigasaki High School succeed in their club activities by offering advice.
+    </div><!--end paragraph-text-->
+</div><!--don't remove this </div> line-->
+
+<!--===========================================-->
+<!--===========================================-->
+<!--===========================================-->
+
+<div character-box chara-id="riko">
+    <div popup-title>Riko Sakurauchi</div>
+    
+    <img image-url="https://i.ibb.co/Przz3dw/bla5.png" width="100%" move-left="10px" move-down="5px">
+    
+    <div sub-heading>basic info</div>
+    
+    <div icon-row>
+        <i class="las la-pen-alt"></i>
+        <span label>Name:</span>
+        <span text>桜内梨子</span>
+    </div>
+    
+    <div icon-row>
+        <i class="las la-user"></i>
+        <span label>Age:</span>
+        <span text>17</span>
+    </div>
+    
+    <div icon-row>
+        <i class="las la-birthday-cake"></i>
+        <span label>Birthday:</span>
+        <span text>September 19th</span>
+    </div>
+    
+    <div sub-heading>statistics</div>
+    
+    <div meter-bars>
+        <div bar-name="singing" fill="95%"></div>
+        <div bar-name="dancing" fill="80%"></div>
+        <div bar-name="technique" fill="89%"></div>
+        <div bar-name="intelligence" fill="80%"></div>
+        <div bar-name="copperativeness" fill="91%"></div>
+    </div>
+    
+    <div sub-heading>★ ★ ★</div>
+    
+    <div paragraph-text>
+        Riko is a reserved, kind, polite and modest girl who likes indoor activities, acting as a foil to her friends, the more energetic Chika and You. She is rather shy, but is nevertheless affable and friendly. However, while she is generally quite levelheaded, calm and mature, she often flies into a panic when under pressure, jumping to conclusions and making mistakes.
+    </div><!--end paragraph-text-->
+</div><!--don't remove this </div> line-->
+
+<!--===========================================-->
+<!--===========================================-->
+<!--===========================================-->
+
+<div character-box chara-id="you">
+    <div popup-title>you watanabe</div>
+    
+    <img image-url="https://i.ibb.co/DgrGhP3/download-2022-08-30-T204440-422-waifu2x-art-noise3-tta-1.png" width="100%" move-left="10px">
+    
+    <div sub-heading>basic info</div>
+    
+    <div icon-row>
+        <i class="las la-pen-alt"></i>
+        <span label>Name:</span>
+        <span text>渡辺曜</span>
+    </div>
+    
+    <div icon-row>
+        <i class="las la-user"></i>
+        <span label>Age:</span>
+        <span text>17</span>
+    </div>
+    
+    <div icon-row>
+        <i class="las la-birthday-cake"></i>
+        <span label>Birthday:</span>
+        <span text>April 17th</span>
+    </div>
+    
+    <div sub-heading>statistics</div>
+    
+    <div meter-bars>
+        <div bar-name="singing" fill="80%"></div>
+        <div bar-name="dancing" fill="94%"></div>
+        <div bar-name="technique" fill="78%"></div>
+        <div bar-name="intelligence" fill="90%"></div>
+        <div bar-name="copperativeness" fill="86%"></div>
+    </div>
+    
+    <div sub-heading>♬ ♬ ♬</div>
+    
+    <div paragraph-text>
+        You is an energetic, tomboyish and positive girl with an outlook of focusing on her goals, which can sometimes cause her to take action without thinking things over first. Her positive attitude also makes her one of the more charismatic members of the group. Since she would like to have her father's job as the captain of a ferry, she tends to salute when she says her catchphrase "Yousoro!", often in the place of "hello" and "good-bye".
+<p>
+
+    </div><!--end paragraph-text-->
+</div><!--don't remove this </div> line-->
+
+
+
+<!--==============================
+         ╔══ ❀•°❀°•❀ ══╗
+         
+      NAVLINKS / CUSTOM LINKS
+      
+         ╚══ ❀•°❀°•❀ ══╝
+================================-->
+
+<div class="booba">
+    <div class="navlinks">
+    
+        <!--
+            • add or remove any links as you need
+            
+            HOW TO CHANGE THE ICON FOR THAT LINK:
+            • go to  flaticon.com/uicons
+            • DO NOT change the "regular" and "rounded" presets
+            • search for an icon you like, click on it
+            • click the copy icon on the code snippet above the green boxes
+            • below, replace the fi-rr line with what you copied
+        -->
+    
+        
+    </div><!--don't remove this </div> line-->
+    <!--end navlinks-->
+    
+    
+ 
+    
+    <!--==============================
+             ╔══ ❀•°❀°•❀ ══╗
+             
+               BOTTOM TITLE
+          
+             ╚══ ❀•°❀°•❀ ══╝
+    ================================-->
+    
+    <div class="bottom-floor-title">
+        
+    </div><!--don't remove this </div> line-->
+    <!--end navlinks-->
+    
+    <!---- CREDIT ---->
+    <!-- please do not remove (⊃д⊂) -->
+    <a class="cows-ring-endlessly-in-tandem" "" title="&#10094;&#10094; Fortitude &#10095;&#10095;&#8194;by glenthemes"></a>
+    
+</div><!--booba-->
+
+
+<iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe><script type="text/javascript">
+    (function(){
+        var analytics_frame = document.getElementById('ga_target');
+        var analytics_iframe_loaded;
+        var user_logged_in;
+        var blog_is_nsfw = 'No';
+
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent,function(e) {
+            var message = (e.data && e.data.split) ? e.data.split(';') : '';
+            switch (message[0]) {
+                case 'analytics_iframe_loaded':
+                    analytics_iframe_loaded = true;
+                    postCSMessage();
+                    postGAMessage();
+                    break;
+                case 'user_logged_in':
+                    user_logged_in = message[1];
+                    postGAMessage();
+                    break;
+            }
+        }, false);
+
+        analytics_frame.src = "https://assets.tumblr.com/analytics.html?_v=9f5febfd57a8a649c598d888f2d9e062#" +
+                              ;
+        function postGAMessage() {
+            if (analytics_iframe_loaded && user_logged_in) {
+                var is_ajax = false;
+                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/fortitude?route=custom_page'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postCSMessage() {
+            COMSCORE = true;
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }
+    })();
+</script><script type="text/javascript" nonce="bUBfF3Ag1FgvztWDx9kg0W1HWs">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1661552177&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDovL2dsZW50aHB2cy50dW1ibHIuY29tL2ZvcnRpdHVkZSIsInJlcXR5cGUiOjAsInJvdXRlIjoiY3VzdG9tX3BhZ2UifQ==&U=GLNACIAAHK&K=d64aa7a2fe39a0ad7fed6b63aef50dc18f7768c3d142b023dac853a3095b10ed&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript>></noscript><script src="https://assets.tumblr.com/client/prod/standalone/tumblelog/index.build.js?_v=0e147942bfe4bb394faff9af7aa7a974"></script></body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
